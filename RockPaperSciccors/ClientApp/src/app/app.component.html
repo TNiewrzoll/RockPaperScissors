@@ -1,0 +1,15 @@
+
+<mat-toolbar color="primary">
+  <span>Rock Paper Scissors</span>
+</mat-toolbar>
+
+<div class="container">
+  <difficulty (difficultySelected)="selectDifficulty($event)"></difficulty>
+  <player-movement (moveSelected)="moveSelected($event)"></player-movement>
+  <div>
+    <h1 style="text-align: center;">{{aIMoveString}}</h1>
+  </div>
+  <div>
+    <h1 style="text-align: center;">{{gamestateMessage}}</h1>
+  </div>
+</div>

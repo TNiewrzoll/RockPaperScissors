@@ -1,0 +1,33 @@
+<div class="button-wrapper">
+  <div class="button-flipper">
+
+    <button mat-flat-button
+            aria-label="Example icon button with a bookmark icon"
+            value="rock"
+            (click)="setPlayerMove('rock')">
+      rock
+      <div>
+        <mat-icon>hexagon</mat-icon>
+      </div>
+    </button>
+
+    <button mat-flat-button
+            aria-label="Example icon button with a bookmark icon"
+            value="paper"
+            (click)="setPlayerMove('paper')">paper
+      <div>
+        <mat-icon>description</mat-icon>
+      </div>
+    </button>
+
+    <button mat-flat-button aria-label="Example icon button with a bookmark icon"
+            value="scissors"
+            (click)="setPlayerMove('scissors')">
+      scissors
+      <div>
+        <mat-icon>content_cut</mat-icon>
+      </div>
+    </button>
+
+  </div>
+</div>

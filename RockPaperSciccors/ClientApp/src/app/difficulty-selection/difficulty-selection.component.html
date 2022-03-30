@@ -1,0 +1,11 @@
+<div class="button-wrapper">
+  <!--<button  value="easy" mat-raised-button (click)="setDifficulty('easy')">Easy</button>
+  <button  value="medium" mat-raised-button (click)="setDifficulty('medium')">Medium</button>
+  <button  value="insane" mat-raised-button (click)="setDifficulty('insane')">Insane</button>-->
+  <mat-radio-group [(ngModel)]="selectedDifficulty">
+    <mat-radio-button (click)="setDifficulty('easy')" value="easy" [checked]="true" >Easy</mat-radio-button>
+    <mat-radio-button (click)="setDifficulty('medium')"value="medium">Medium</mat-radio-button>
+    <mat-radio-button (click)="setDifficulty('insane')"value="insane">Insane</mat-radio-button>
+  </mat-radio-group>
+  <!--{{difficultySelected}}-->
+</div>

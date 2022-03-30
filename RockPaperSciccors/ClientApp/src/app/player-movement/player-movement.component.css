@@ -1,0 +1,32 @@
+@import 'https://fonts.google.com/specimen/Pacifico';
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+button {
+  margin-right: 10px;
+  height: 150px;
+  width: 110px;
+  transition: width 300ms, height 500ms, background-color 300ms, color 200ms;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  
+}
+
+.button {
+  animation: turner 4s infinite linear
+}
+
+@keyframes button {
+  from {
+    transform: rotateY(0deg)
+  }
+
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
